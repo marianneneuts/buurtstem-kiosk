@@ -168,4 +168,4 @@ slider({
 	dots: true,
 	numberSlid: true,
 	line: true
-})
+});
