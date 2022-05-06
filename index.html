@@ -1,74 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<div class="slideshow-container">
+  <div class="slider-container your-class-1">
 
-<div class="mySlides fade">
-    <h1>Hé, jij daar!</h1>
-    <h2>Kom eens een kijkje nemen!</h2>
-    <button class="next" onclick="plusSlides(+1)">Neem een kijkje -></button>
-</div>
-
-<div class="mySlides fade">
-    <h2 class="subtitle">Ben jij al bekend met <br> de Nieuwe Vesten?</h2>
-    <p>De Nieuwe Vesten is een baanbrekend <br> project van Stad Mechelen en het <br> Agentschap Wegen en Verkeer. Op de Nieuwe <br> Vesten komt er ruimte voor elke Mechelaar, <br> voor meer groen, voor fietsers en wandelaars, <br> om te spelen en te ontmoeten.</p>
-    <button class="next" onclick="plusSlides(+1)">Volgende -></button>
-</div>
-
-<div class="mySlides fade">
-  <h2 class="subtitle">Wil jij ook meewerken aan <br> het toekomstige uiterlijk <br> van de Nieuwe Vesten?</h2>
-    <p>Buurtstem biedt buurtbewoners de <br> mogelijkheid om opbouwend samen te werken, <br> met het oog op het inrichten van de <br> Nieuwe Vesten.</p>
-    <button class="next" onclick="plusSlides(+1)">Ik wil meedoen -></button>
-</div>
-
-<div class="mySlides fade">
-  <h2 class="subtitle">Scan snel onze QR-code <br> om deel te nemen!</h2>
-    <p>Door de QR-code te scannen, ontvangt u <br> een e-mail met een link naar de <br> webapplicatie van Buurtstem</p>
-    <button class="next" onclick="plusSlides(+1)">Beïndigen -></button>
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span> 
-</div>
-
-<script>
-  let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
+    <div class="slider">
+  
+      <div class="slider__item">
+        <h1 class="main-title">Hé, jij daar!</h1>
+        <h2>Spreekt dit je aan?</h2>
+        <img src="" alt="">
+        <h2>Of dit?</h2>
+        <img src="" alt="">
+        <h2>Neem dan snel een kijkje!</h2>
+      </div>
+      <div class="slider__item">
+        <h2 class="subtitle">Ben jij al bekend met <br> de Nieuwe Vesten?</h2>
+        <p>De Nieuwe Vesten is een baanbrekend project van Stad Mechelen en het Agentschap Wegen en Verkeer. Op de Nieuwe Vesten komt er ruimte voor elke Mechelaar, voor meer groen, voor fietsers en wandelaars, om te spelen en te ontmoeten.</p>
+        <img class="nieuwe-vesten" src="../images/nieuwevesten.svg" alt="">
+      </div>
+      <div class="slider__item">
+        <h2 class="subtitle">Wil jij ook meewerken aan het toekomstige <br>  uiterlijk van de Nieuwe Vesten?</h2>
+        <p>Buurtstem biedt buurtbewoners de mogelijkheid om opbouwend samen te werken, met het oog op het inrichten van de Nieuwe Vesten.</p>
+        <img src="../images/image (9).png" alt="">
+      </div>
+      <div class="slider__item">
+        <h2 class="subtitle">Scan snel onze QR-code <br> om deel te nemen!</h2>
+        <p>Door de QR-code te scannen, kom je meteen uit bij de webapplicatie van Buurtstem. Zo kan je aanmelden en beginnen met creeeëren en voor de Nieuwe Vesten!</p>
+        <img src="../images/qrcode.svg" alt="">
+      </div>
+  
+    </div>
+  
+    <div class="arrows">
+      <span class="arrows__item arrows__item_prew">&#10096;</span>
+      <span class="arrows__item arrows__item_next">&#10097;</span>
+    </div>
+  
+  </div>
+  
+  <script src="slider.js"></script>
 </body>
-</html> 
+</html>
