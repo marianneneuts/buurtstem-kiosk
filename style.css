@@ -1,5 +1,7 @@
+/*size is 820 x 1000*/
+
 body {
-  font-family: 'Arial Rounded MT Bold', sans-serif;
+  font-family: 'Arial Rounded MT', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -14,13 +16,19 @@ img {
   max-width: 30%;
 }
 
+.headimage {
+  padding: 10px;
+  width: 50%;
+  max-width: 100%;
+}
+
 .nieuwe-vesten{
   width: 50%;
 }
 
 .main-title {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   text-align: center;
   color: #D16014;
 }
@@ -30,9 +38,14 @@ h2 {
 }
 
 p {
+  font-family: 'Arial Rounded MT', sans-serif;
   padding-top: 30px;
   margin-left: 200px;
   width: 50%;
+}
+
+.orange {
+  color: #D16014;
 }
 
 /*slider, dots en counts*/
@@ -61,7 +74,7 @@ p {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #979797;
+  background: #D16014;
   opacity: .3;
   margin-right: .5rem;
   cursor: pointer;
@@ -105,6 +118,7 @@ p {
 }
 
 .arrows__item{
+  color: #D16014;
   margin-left: 31rem;
   cursor: pointer;
   font-size: 3rem;
@@ -127,9 +141,9 @@ p {
 }
 
 .slider-execution-line__progress{
-  background: -webkit-gradient(linear, right top, left top, from(#5f5f5f), to(#c1c1c1));
-  background: -o-linear-gradient(right, #5f5f5f, #c1c1c1);
-  background: linear-gradient(to left, #5f5f5f, #c1c1c1);
+  background: -webkit-gradient(linear, right top, left top, from(#86AD1B), to(#9FC735));
+  background: -o-linear-gradient(right, #86AD1B, #9FC735);
+  background: linear-gradient(to left, #86AD1B, #9FC735);
   width: 00%;
   height: 100%;
   -webkit-transition: width .9s ease-in-out;
