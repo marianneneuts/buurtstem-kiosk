@@ -1,9 +1,10 @@
-/*size is 820 x 1000*/
+/*size is 820 x 1040*/
 
 body {
   font-family: 'Arial Rounded MT', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #F1C27D;
 }
 
 img {
@@ -16,25 +17,67 @@ img {
   max-width: 30%;
 }
 
-.headimage {
-  padding: 10px;
+.headimage1 {
+  margin-top: -30px;
+  margin-left: 50px;
+  width: 50%;
+  max-width: 100%;
+}
+
+.headimage2 {
+  margin-top: -340px;
+  margin-left: 350px;
   width: 50%;
   max-width: 100%;
 }
 
 .nieuwe-vesten{
+  margin-top: 100px;
   width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.image-buurtstem{
+  margin-top: 50px;
+  max-width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.qr {
+  margin-top: 100px;
+  max-width: 40%;
+  position: relative;
+  z-index: 1;
+}
+
+.green-circle{
+  width: 50%;
+  max-width: 100%;
+  margin-top: -380px;
+  z-index: 3;
 }
 
 .main-title {
-  padding-top: 30px;
+  font-size: 40px;
+  padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   color: #D16014;
 }
 
+.subtitle {
+  font-size: 40px;
+}
+
 h2 {
   text-align: center;
+}
+
+h2 .orange {
+  margin-top: -60px;
+  font-size: 40px;
 }
 
 p {
@@ -42,6 +85,7 @@ p {
   padding-top: 30px;
   margin-left: 200px;
   width: 50%;
+  font-size: 22px;
 }
 
 .orange {
